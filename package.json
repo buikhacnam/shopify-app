@@ -37,5 +37,5 @@
     "react-dom": "^17.0.1",
     "store-js": "^2.0.4"
   },
-  "proxy": "https://1c99582e3254.ngrok.io"
+  "proxy": "https://183037e6cb6a.ngrok.io"
 }

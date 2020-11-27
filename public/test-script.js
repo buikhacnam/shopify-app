@@ -1,6 +1,3 @@
-
-
-console.log(Shopify);
 let shop = Shopify.shop;
 
 function makeApp(data) {
@@ -18,7 +15,7 @@ function makeApp(data) {
   
   return data.map(item => {
     let a = document.createElement("a");
-     let node = document.createTextNode(item.title);
+    let node = document.createTextNode(item.title);
     a.appendChild(node);
     a.title = item.title;
     a.href = `/products/${item.handle}`;
@@ -28,12 +25,12 @@ function makeApp(data) {
 }
 
 fetch(
-    `https://cors-anywhere.herokuapp.com/https://1c99582e3254.ngrok.io/api/products?shop=${shop}`
+    `https://cors-anywhere.herokuapp.com/https://183037e6cb6a.ngrok.io/api/products?shop=${shop}`
   )
     .then((res) => res.json())
     .then((data) => {
       makeApp(data.data);
-      console.log(data.data);
+      //console.log(data.data);
       
     })
     .catch((error) => console.log(error));
