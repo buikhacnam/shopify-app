@@ -11,6 +11,7 @@ function Index() {
     const emptyState = !store.get('ids');
 
     function handleSelection(resources) {
+        console.log(resources);
         const idsFromResources = resources.selection.map((product) => product.id);
         setModal({ open: false });
         store.set('ids', idsFromResources)
@@ -55,7 +56,7 @@ function Index() {
             {emptyState ?
                 <Layout>
                     <EmptyState
-                        heading="Manage your inventory transfers"
+                        heading="Choose Your Best Products"
                         action={{
                             content: 'Select Products',
                             onAction: () => setModal({ open: true })

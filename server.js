@@ -24,6 +24,7 @@ const { SHOPIFY_API_SECRET_KEY, SHOPIFY_API_KEY } = process.env;
 const server = new Koa();
 const router = new KoaRouter();
 
+// store products here
 let products = [];
 
 
@@ -107,4 +108,3 @@ app.prepare().then(() => {
 
 });
 
-console.log(products);

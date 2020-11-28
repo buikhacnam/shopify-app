@@ -25,7 +25,7 @@ function makeApp(data) {
 }
 
 fetch(
-    `https://cors-anywhere.herokuapp.com/https://183037e6cb6a.ngrok.io/api/products?shop=${shop}`
+    `https://cors-anywhere.herokuapp.com/https://a5521ac4373e.ngrok.io/api/products?shop=${shop}`
   )
     .then((res) => res.json())
     .then((data) => {
